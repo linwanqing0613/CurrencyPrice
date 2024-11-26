@@ -52,12 +52,15 @@ CREATE TABLE currency (
 - **HTTP 方法**: `GET`
 - **URL**: `/api/currency`
 
+### 3. 呼叫coindesk的API
+- **HTTP 方法**: `GET`
+- **URL**: `/api/currency/update`
 
-### 3. 根據幣別代碼查詢幣別
+### 4. 根據幣別代碼查詢幣別
 - **HTTP 方法**: `GET`
 - **URL**: `/api/currency/code/{code}`
 
-### 4. 更新幣別資料
+### 5. 更新幣別資料
 - **HTTP 方法**: `PUT`
 - **URL**: `/api/currency/update/{id}`
 - **RequestBody**:
@@ -71,7 +74,7 @@ CREATE TABLE currency (
     }
     ```
 
-### 5. 刪除幣別資料
+### 6. 刪除幣別資料
 - **HTTP 方法**: `DELETE`
 - **URL**: `/api/currency/delete/{id}`
 
